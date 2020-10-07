@@ -7,7 +7,7 @@ function compare() {
 
     var dataPost = {
         "original": $('#original').val(),
-        "modified": $('#modified').val()
+        "modified": $('#modified').val(),
     };
     var dataString = JSON.stringify(dataPost);
 
