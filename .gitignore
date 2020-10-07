@@ -1,1 +1,6 @@
 .vs/
+
+# hide npm packages & modules
+node_modules/
+
+packages*

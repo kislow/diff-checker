@@ -1,0 +1,23 @@
+{
+  "name": "diff-checker",
+  "version": "1.0.0",
+  "description": "[![](https://img.shields.io/docker/pulls/brensio/diff-checker?style=for-the-badge)](https://hub.docker.com/r/brensio/diff-checker) [![](https://img.shields.io/github/release/brensio/diff-checker?style=for-the-badge)](https://github.com/brensio/diff-checker/releases) [![](https://img.shields.io/github/license/brensio/diff-checker?style=for-the-badge)](https://github.com/brensio/diff-checker/blob/master/LICENSE) [![](https://img.shields.io/github/issues/brensio/diff-checker?style=for-the-badge)](https://github.com/brensio/diff-checker/issues) [![](https://img.shields.io/github/forks/brensio/diff-checker?style=for-the-badge)](https://github.com/brensio/diff-checker/network/members) [![](https://img.shields.io/github/stars/brensio/diff-checker?style=for-the-badge)](https://github.com/brensio/diff-checker/stargazers)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kislow/diff-checker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kislow/diff-checker/issues"
+  },
+  "homepage": "https://github.com/kislow/diff-checker#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
