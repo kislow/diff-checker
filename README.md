@@ -10,6 +10,23 @@
 
 This is a minimal web tool for text comparison made in JavaScript and PHP. 
 
+## Getting Started
+
+Install required npm package (express):
+```bash
+npm install express
+```
+
+Start application:
+```bash
+node app.js
+```
+
+Access diff tool on your browser:
+```html
+localhost:8080
+```
+
 ## Usage
 
 To use it, simply paste the original text into the first field and the modified text into the second one, then click `compare text`.
