@@ -1,7 +1,7 @@
 function compare() {
 
     if ($('#original').val() == '' || $('#modified').val() == '') {
-        alert('UNABLE TO COMPARE')
+        alert('UNABLE TO COMPARE');
         return;
     }
 
@@ -12,7 +12,7 @@ function compare() {
     var dataString = JSON.stringify(dataPost);
 
     $.ajax({
-        url: 'compare.php',
+        url: '../compare/execphp.js',
         data: {
             data: dataString
         },

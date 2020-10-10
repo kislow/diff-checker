@@ -1,15 +1,15 @@
 const express = require('express');
 const app = express();
-const execPHP = require('./execphp.js')();
+const ExecPHP = require('./assets/compare/execphp.js')();
 
-// execPHP.phpFolder = '';
+ExecPHP.phpFolder = '';
 
-const PORT = process.env.PORT || 8080
+const PORT = process.env.PORT || 8080;
 
-// app.use(express.static('./'));
+app.use(express.static('./'));
 
-app.use(express.static('./'), function(request,response,next) {
-	execPHP.parseFile(request.originalUrl,function(phpResult) {
+app.use('*.php', function(request,response,next) {
+	ExecPHP.parseFile(request.originalUrl,function(phpResult) {
 		response.write(phpResult);
 		response.end();
 	});
@@ -18,4 +18,4 @@ app.use(express.static('./'), function(request,response,next) {
 
 app.listen(PORT, () => {
     console.log(`Server is listening on port: ${PORT}`);
-})
+});

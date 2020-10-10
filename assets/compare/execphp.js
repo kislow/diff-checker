@@ -1,17 +1,10 @@
-/**
-*
-*/
+
 class ExecPHP {
-	/**
-	*
-	*/
 	constructor() {
 		this.phpPath = '/usr/bin/php';
-		this.phpFolder = '';
+		this.phpFolder = './';
 	}	
-	/**
-	*
-	*/
+
 	parseFile(fileName,callback) {
 		// var realFileName = this.phpFolder + fileName;
 		
@@ -25,6 +18,7 @@ class ExecPHP {
 		});
 	}
 }
+
 module.exports = function() {
 	return new ExecPHP();
 };
