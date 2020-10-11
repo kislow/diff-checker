@@ -30,8 +30,17 @@ if (originalCount > modifiedCount) {
     var s = originalCount;
 }
 
+var strcmp = new Intl.Collator(undefined, {numeric:true, sensitivity:'base'}).compare;
+
 for (var i=0; i<n; i++) {
-    var strcmp = new Intl.Collator(undefined, {numeric:true, sensitivity:'base'}).compare;
-    
+    if (i < n) {
+        
+    }
+
 }
+
+// sample string comparison
+// var str1 = "ab";
+// var str2 = "cd";
+// var n = str1.localeCompare(str2);
 
