@@ -12,7 +12,7 @@ function compare() {
     var dataString = JSON.stringify(dataPost);
 
     $.ajax({
-        url: '../compare/execphp.js',
+        url: 'execphp.js',
         data: {
             data: dataString
         },
