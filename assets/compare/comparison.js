@@ -34,7 +34,9 @@ var strcmp = new Intl.Collator(undefined, {numeric:true, sensitivity:'base'}).co
 
 for (var i=0; i<n; i++) {
     if (i < n) {
-        
+        if (strcmp(original[i], modified[i])) {
+            response = `${response} ` //concatenate
+        }
     }
 
 }
