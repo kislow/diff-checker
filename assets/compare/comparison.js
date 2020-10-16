@@ -14,7 +14,6 @@ const obj = () => {
 var original = string.split('\n', obj([original]));
 var modified = string.split('\n', obj([modified]));
 var response = '';
-
 var n = 0;
 var s = 0;
 
@@ -35,11 +34,24 @@ var strcmp = new Intl.Collator(undefined, {numeric:true, sensitivity:'base'}).co
 for (var i=0; i<n; i++) {
     if (i < n) {
         if (strcmp(original[i], modified[i])) {
-            response = `${response} ` //concatenate
+            response = `${response} ${i + 1} \t | \t ${original[$i]} \t >> ${modified[$i]}`;
+        } else {
+            response = `${response} ${i + 1} \t | \t ${original[$i]}`;
+        }
+    } else {
+        if(originalCount > modifiedCount) {
+            response = `${response} ${i + 1} \t | \t '[Removed]' \t ${original[$i]}`;
+        } else {
+            response = `${response} ${i + 1} \t | \t '[Added]' \t ${modified[$i]}`;
         }
     }
 
+    var nl = "\n";
+    var response = response.nl;
+
 }
+
+    console.log(response);
 
 // sample string comparison
 // var str1 = "ab";
